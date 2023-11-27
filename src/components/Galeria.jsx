@@ -33,7 +33,7 @@ const Galeria = () => {
     return (
         <div className="galeria-section-wrapper">
             <div className="galeria-section-top">
-                <p className="texto">Galeria</p>
+                <p className="subtitulo">Galería de álbumes</p>
                 {/* <h1 className="encabezado">How It Works</h1> */}
                 {/* <p className="texto">
                     Lorem ipsum dolor sit amet consectetur. Non tincidunt magna non et

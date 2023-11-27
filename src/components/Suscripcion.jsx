@@ -28,7 +28,7 @@ const Suscripcion = () => {
             <h1 className="encabezado">¿Quieres estar al tanto de las últimas novedades musicales?</h1>
             <h1 className="texto">Ingrese su correo para recibir las novedades.</h1>
             <div className="formulario-contacto">
-                <input type="email" placeholder="yourmail@gmail.com" value={correo} onChange={cambiarCorreo} />
+                <input type="email" placeholder="tuemail@gmail.com" value={correo} onChange={cambiarCorreo} />
                 <button className="boton" onClick={guardarCorreo}>Enviar</button>
             </div>
         </div>

@@ -1,43 +1,41 @@
 import React from "react";
 import '../assets/css/footer.css'
-// import Logo from "../Assets/Logo.svg";
-// import { BsTwitter } from "react-icons/bs";
-// import { SiLinkedin } from "react-icons/si";
-// import { BsYoutube } from "react-icons/bs";
-// import { FaFacebookF } from "react-icons/fa";
+import Logo from "../assets/img/Logo.png";
+import { BsTwitter } from "react-icons/bs";
+import { SiLinkedin } from "react-icons/si";
+import { BsYoutube } from "react-icons/bs";
+import { FaFacebookF } from "react-icons/fa";
 
 const Footer = () => {
     return (
         <div className="footer-wrapper">
             <div className="footer-section-one">
-                {/* <div className="footer-logo-container">
+                <div className="footer-logo-container">
                     <img src={Logo} alt="" />
-                </div> */}
-                {/* <div className="footer-icons">
+                </div>
+                <div className="footer-icons">
                     <BsTwitter />
                     <SiLinkedin />
                     <BsYoutube />
                     <FaFacebookF />
-                </div> */}
+                </div>
             </div>
             <div className="footer-section-two">
                 <div className="footer-section-columns">
-                    <span>Qualtiy</span>
-                    <span>Help</span>
-                    <span>Share</span>
-                    <span>Carrers</span>
-                    <span>Testimonials</span>
-                    <span>Work</span>
+                    <span>Inicio</span>
+                    <span>Ranking</span>
+                    <span>Galería</span>
+                    <span>Servicios</span>
                 </div>
                 <div className="footer-section-columns">
-                    <span>244-5333-7783</span>
-                    <span>hello@food.com</span>
-                    <span>press@food.com</span>
-                    <span>contact@food.com</span>
+                    <span>111-222-2222</span>
+                    <span>ejemplo@ejemplo.com</span>
+                    <span>contacto@contacto.com</span>
+                    <span>administrativo@beatbazaar.com</span>
                 </div>
                 <div className="footer-section-columns">
-                    <span>Terms & Conditions</span>
-                    <span>Privacy Policy</span>
+                    <span>Términos y condiciones</span>
+                    <span>Políticas de privacidad</span>
                 </div>
             </div>
         </div>

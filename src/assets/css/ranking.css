@@ -1,0 +1,70 @@
+.encabezado-primario {
+    font-size: clamp(2rem, 5vw, 4rem);
+    color: #4c4c4c;
+    max-width: 600px;
+  }
+
+.texto-primario {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    max-width: 500px;
+    color: #6a6a6a;
+    margin: 1.5rem 0rem;
+}
+  
+.boton-secundario {
+    padding: 1rem 2.5rem;
+    background-color: #422f9c;
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: 600;
+    color: white;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.boton-secundario svg {
+    margin-left: 0.75rem;
+    font-size: 1.5rem;
+}
+  
+.boton-secundario:hover {
+    background-color: #422f9c;
+  
+}
+  
+.ranking-section-container {
+    margin-top: 20rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+}
+  
+.ranking-background-container {
+    position: absolute;
+    left: -150px;
+    z-index: -2;
+}
+  
+.ranking-section-card {
+    flex: 2;
+    margin-right: 1rem;
+    padding: 2rem;
+}
+  
+.ranking-section-texto {
+    flex: 1;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.ranking-butones-container {
+    margin-top: 2rem;
+    display: flex;
+}

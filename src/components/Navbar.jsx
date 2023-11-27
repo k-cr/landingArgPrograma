@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import '../assets/css/navbar.css'
 import { HiOutlineBars3 } from "react-icons/hi2"
+import Logo from "../assets/img/Logo.png"
 import {
     Box, 
     Drawer, 
@@ -13,7 +14,6 @@ import {
 import Home from "@mui/icons-material/Home";
 import Info from "@mui/icons-material/Info";
 import Telefono from "@mui/icons-material/PhoneRounded";
-import Carrito from "@mui/icons-material/ShoppingCartRounded";
 
 const Navbar = () => {
 
@@ -38,28 +38,24 @@ const Navbar = () => {
             icono: <Info/>
         },
         {
-            texto: "Suscripción",
+            texto: "Suscribirse",
             icono: <Telefono/>
         },
-        {
-            texto: "Carrito",
-            icono: <Carrito/>
-        }
     ]
 
     return <nav>
         <div className="navbar-logo-container">
-            PICA PONCHO
+            <img src={Logo} alt="" />
         </div>
         <div className="navbar-links-container">
-            <a href="#">Inicio</a>
-            <a href="#">Ranking</a>
-            <a href="#">Galería</a>
-            <a href="#">Servicios</a>
-            <a href="#">Suscribirse</a>
+            <a href="">Inicio</a>
+            <a href="">Ranking</a>
+            <a href="">Galería</a>
+            <a href="">Servicios</a>
+            <a href="">Suscribirse</a>
         </div>
         <div className="navbar-menu-container">
-            <HiOutlineBars3 onClick={() => setAbrirMenu(true)} />
+            <HiOutlineBars3 size={35} onClick={() => setAbrirMenu(true)} />
         </div>
         <Drawer open={ abrirMenu } onClose={ () => setAbrirMenu(false) } anchor="right">
             <Box 

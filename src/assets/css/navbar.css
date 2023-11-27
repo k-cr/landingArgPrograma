@@ -6,7 +6,11 @@ nav {
 }
 
 .navbar-menu-container {
-    display: none
+    display: none;
+}
+
+.navbar-menu-container HiOutlineBars3 {
+    width: 500px;
 }
 
 .navbar-links-container a {
@@ -15,6 +19,14 @@ nav {
     color: black;
     font-size: 1.1rem;
     font-weight: 600;
+}
+
+.navbar-links-container a:hover {
+  margin-right: 3rem;
+  text-decoration: none;
+  color: #422f9c;
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 
 .boton-primario {

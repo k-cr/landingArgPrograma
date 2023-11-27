@@ -1,40 +1,42 @@
 import React from 'react';
 import '../assets/css/servicio.css';
+import { BsFillShieldLockFill } from "react-icons/bs";
+import { BsCursorFill } from "react-icons/bs";
+import { BsTruck } from "react-icons/bs";
 
 const Servicio = () => {
     const servicioInfo = [
         {
-            image: "image",
-            title: "titulo",
-            text: "texto"
+            image: <BsFillShieldLockFill/>,
+            title: "Búsqueda segura",
+            text: "Tu búsqueda está segura garantizando al usuario búsquedas privadas"
         },
         {
-            image: "image2",
-            title: "titulo2",
-            text: "texto2"
+            image: <BsCursorFill/>,
+            title: "Lo tenés en un click",
+            text: "A un solo click de distancia de tener tu álbum favorito"
         },
         {
-            image: "image3",
-            title: "titulo3",
-            text: "texto3"
+            image: <BsTruck/>,
+            title: "Envíos a domicilio",
+            text: "Navegá y comprá desde la comunidad de tu casa. Envíos a todo LATAM sin cargo"
         }
     ];
 
     return (
         <div className="servicio-section-wrapper">
             <div className="servicio-section-top">
-                <p className="subtitulo">Servicio</p>
-                {/* <h1 className="encabezado">How It Works</h1> */}
+                <h1 className="subtitulo">Servicios</h1>
                 <p className="texto">
-                    Lorem ipsum dolor sit amet consectetur. Non tincidunt magna non et
-                    elit. Dolor turpis molestie dui magnis facilisis at fringilla quam.
+                    Nuestra tienda ofrece los siguientes servicios para asegurar que nuestro cliente quede satisfecho con los productos que desea
                 </p>
             </div>
             <div className="servicio-section-boton">
                 {servicioInfo.map((data) => (
                     <div className="servicio-section-info" key={data.title}>
                         <div className="info-boxes-img-container">
-                            <img src={data.image} alt="" />
+                            {data.image}
+                            {/* <img src={data.image} alt="" /> */}
                         </div>
                         <h2>{data.title}</h2>
                         <p>{data.text}</p>
